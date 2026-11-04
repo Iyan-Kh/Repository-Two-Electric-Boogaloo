@@ -1,14 +1,13 @@
 html,
 body,
 * {
-  font-size: 15px;
+  font-size: 19px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
   background-color: #3a3535dc;
-  font-family: ui-sans-serif, system-ui, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
@@ -21,7 +20,7 @@ body {
   height: 100vh;
   color: white;
   background:
-    linear-gradient(rgba(8, 84, 130, 0.8), rgba(4, 70, 115, 0.8));
+    linear-gradient(rgba(20, 135, 206, 0.8), rgba(4, 70, 115, 0.8));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -42,6 +41,7 @@ body {
 }
 .btn {
   display: inline-block;
+  font-family: "Roboto", sans-serif;
   padding: 1.4rem 3.2rem;
   font-size: 2rem;
   background-color: #ff4f9a;
@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #e0332d;
+  background-color: #f00b76;
   color: #ffffff;
   width: 30rem;
   height: 55rem;
@@ -64,7 +64,7 @@ body {
 }
 .card-title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 .card-img {
@@ -73,11 +73,8 @@ body {
   object-fit: cover;
   border-radius: 0.8rem;
 }
-.card-price {
-  margin: 0;
-}
 .card-btn {
-  height: 4rem;
+  height: 6rem;
   padding: 0 1.6rem;
   background-color: #605dff;
   color: #edf0ff;
