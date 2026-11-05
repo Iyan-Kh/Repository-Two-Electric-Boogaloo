@@ -17,6 +17,7 @@ function inject(item) {
        <h2 class="card header">${item}</h2>
         <img src="${item.img}" alt="" />
         <p>filler filler filler</p>
+        <button class="card-btn">Add Cart</button>
     <div>`,
     );
 }
@@ -25,4 +26,9 @@ btn.addEventListener("click", function () {
     x++;
     header.textContent = `Clicked ${x}`;
     rgb();
+});
+const buttons = document.querySelectorAll(".card-btn").forEach((button) => {
+    button.addEventListener("click", function(e) {
+        console.log(e.target.closest(".card").getAttribute("data-item"));
+    });
 });
