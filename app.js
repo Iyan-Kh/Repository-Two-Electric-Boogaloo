@@ -10,6 +10,7 @@ function rgb() {
     let b= Math.floor(Math.random() * 256)
     box.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 }
+let item = {name: "Mason", price: 299.99 };
 function inject(item) {
     const container = document.querySelector(".container");
     container.insertAdjacentHTML("beforeend",
